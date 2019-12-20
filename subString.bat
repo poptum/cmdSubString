@@ -1,0 +1,1 @@
+for /r %%i in (*) do ( for /f "tokens=1,2,3 delims=\" %%a in ("%%i") do ( for /f "tokens=1,2 delims=." %%f in ("%%c") do ( if not %%f == script ((findstr /V "4-28074137662" %%i) > %%f1.csv && del %%i && rename %%f1.csv %%f.csv))))
